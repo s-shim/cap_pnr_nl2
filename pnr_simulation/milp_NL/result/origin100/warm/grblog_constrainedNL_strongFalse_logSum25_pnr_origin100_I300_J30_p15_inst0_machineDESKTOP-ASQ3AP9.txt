@@ -1,0 +1,74 @@
+
+Gurobi 10.0.1 (win64) logging started Wed Jan 15 21:55:45 2025
+
+Set parameter LogFile to value "result/origin100/grblog_constrainedNL_strongFalse_logSum25_pnr_origin100_I300_J30_p15_inst0_machineDESKTOP-ASQ3AP9.txt"
+
+Gurobi 10.0.1 (win64) logging started Wed Jan 15 21:55:45 2025
+
+Set parameter LogFile to value "result/origin100/grblog_constrainedNL_strongFalse_logSum25_pnr_origin100_I300_J30_p15_inst0_machineDESKTOP-ASQ3AP9.txt"
+Warning for adding constraints: zero or small (< 1e-13) coefficients, ignored
+Set parameter LazyConstraints to value 1
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (win64)
+
+CPU model: Intel(R) Core(TM) i7-7700 CPU @ 3.60GHz, instruction set [SSE2|AVX|AVX2]
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 19011 rows, 9360 columns and 46624 nonzeros
+Model fingerprint: 0xca6620c7
+Variable types: 9330 continuous, 30 integer (30 binary)
+Coefficient statistics:
+  Matrix range     [9e-13, 4e+13]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 8e+02]
+Warning: Model contains large matrix coefficient range
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+
+User MIP start produced solution with objective 951.069 (0.04s)
+Loaded user MIP start with objective 951.069
+
+Presolve removed 17425 rows and 8803 columns
+Presolve time: 0.01s
+Presolved: 1586 rows, 557 columns, 4799 nonzeros
+Variable types: 527 continuous, 30 integer (30 binary)
+
+Root relaxation: objective 2.452270e+03, 273 iterations, 0.00 seconds (0.01 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 2452.26958    0   12  951.06918 2452.26958   158%     -    0s
+     0     0 1326.13782    0    9  951.06918 1326.13782  39.4%     -    0s
+     0     0 1109.92252    0    9  951.06918 1109.92252  16.7%     -    0s
+     0     0 1098.49249    0   11  951.06918 1098.49249  15.5%     -    0s
+     0     0 1098.48490    0   11  951.06918 1098.48490  15.5%     -    0s
+     0     0 1014.21873    0    9  951.06918 1014.21873  6.64%     -    0s
+     0     0 1014.21873    0    9  951.06918 1014.21873  6.64%     -    0s
+     0     0 1013.20171    0   10  951.06918 1013.20171  6.53%     -    0s
+     0     0  996.00982    0    8  951.06918  996.00982  4.73%     -    0s
+     0     0  995.04376    0    7  951.06918  995.04376  4.62%     -    0s
+     0     0  994.28803    0    7  951.06918  994.28803  4.54%     -    0s
+     0     0  993.49271    0    7  951.06918  993.49271  4.46%     -    0s
+     0     0  988.22321    0    9  951.06918  988.22321  3.91%     -    0s
+     0     0  988.22321    0    9  951.06918  988.22321  3.91%     -    0s
+     0     0  988.22321    0    9  951.06918  988.22321  3.91%     -    0s
+     0     2  988.22319    0    9  951.06918  988.22319  3.91%     -    0s
+
+Cutting planes:
+  Implied bound: 19
+  MIR: 50
+  Flow cover: 43
+  RLT: 41
+  Relax-and-lift: 7
+  Lazy constraints: 372
+
+Explored 10 nodes (3644 simplex iterations) in 0.66 seconds (0.58 work units)
+Thread count was 8 (of 8 available processors)
+
+Solution count 1: 951.069 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 9.510691848404e+02, best bound 9.511036437241e+02, gap 0.0036%
+
+User-callback calls 412, time in user-callback 0.12 sec

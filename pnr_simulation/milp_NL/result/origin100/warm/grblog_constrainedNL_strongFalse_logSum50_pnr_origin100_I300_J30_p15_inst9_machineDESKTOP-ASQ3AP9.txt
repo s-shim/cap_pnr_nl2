@@ -1,0 +1,83 @@
+
+Gurobi 10.0.1 (win64) logging started Wed Jan 15 21:42:35 2025
+
+Set parameter LogFile to value "result/origin100/grblog_constrainedNL_strongFalse_logSum50_pnr_origin100_I300_J30_p15_inst9_machineDESKTOP-ASQ3AP9.txt"
+
+Gurobi 10.0.1 (win64) logging started Wed Jan 15 21:42:35 2025
+
+Set parameter LogFile to value "result/origin100/grblog_constrainedNL_strongFalse_logSum50_pnr_origin100_I300_J30_p15_inst9_machineDESKTOP-ASQ3AP9.txt"
+Set parameter LazyConstraints to value 1
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (win64)
+
+CPU model: Intel(R) Core(TM) i7-7700 CPU @ 3.60GHz, instruction set [SSE2|AVX|AVX2]
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 23568 rows, 9360 columns and 61703 nonzeros
+Model fingerprint: 0xcee7b145
+Variable types: 9330 continuous, 30 integer (30 binary)
+Coefficient statistics:
+  Matrix range     [9e-11, 1e+10]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 8e+02]
+Warning: Model contains large matrix coefficient range
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+
+User MIP start produced solution with objective 1905.19 (0.08s)
+Loaded user MIP start with objective 1905.19
+
+Presolve removed 16111 rows and 8102 columns
+Presolve time: 0.04s
+Presolved: 7457 rows, 1258 columns, 22696 nonzeros
+Variable types: 1228 continuous, 30 integer (30 binary)
+Root relaxation presolved: 7457 rows, 1258 columns, 22696 nonzeros
+
+
+Root relaxation: objective 4.468491e+03, 1874 iterations, 0.11 seconds (0.25 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 4468.49056    0   24 1905.18724 4468.49056   135%     -    0s
+     0     0 3573.17456    0   18 1905.18724 3573.17456  87.5%     -    0s
+     0     0 3199.14741    0   24 1905.18724 3199.14741  67.9%     -    1s
+     0     0 3176.93189    0   24 1905.18724 3176.93189  66.8%     -    1s
+     0     0 3176.90640    0   24 1905.18724 3176.90640  66.8%     -    1s
+     0     0 2852.46608    0   21 1905.18724 2852.46608  49.7%     -    1s
+     0     0 2613.98835    0   16 1905.18724 2613.98835  37.2%     -    2s
+     0     0 2602.73657    0   18 1905.18724 2602.73657  36.6%     -    2s
+     0     0 2602.70333    0   18 1905.18724 2602.70333  36.6%     -    2s
+     0     0 2396.52011    0   19 1905.18724 2396.52011  25.8%     -    2s
+     0     0 2393.27413    0   19 1905.18724 2393.27413  25.6%     -    2s
+     0     0 2393.08444    0   19 1905.18724 2393.08444  25.6%     -    2s
+     0     0 2377.22813    0   21 1905.18724 2377.22813  24.8%     -    3s
+     0     0 2376.65301    0   21 1905.18724 2376.65301  24.7%     -    3s
+     0     0 2365.60526    0   22 1905.18724 2365.60526  24.2%     -    3s
+     0     0 2363.03065    0   21 1905.18724 2363.03065  24.0%     -    3s
+     0     0 2362.72972    0   22 1905.18724 2362.72972  24.0%     -    3s
+     0     0 2361.80510    0   22 1905.18724 2361.80510  24.0%     -    3s
+     0     0 2361.14197    0   21 1905.18724 2361.14197  23.9%     -    3s
+     0     0 2358.99919    0   21 1905.18724 2358.99919  23.8%     -    3s
+     0     0 2358.99682    0   21 1905.18724 2358.99682  23.8%     -    4s
+     0     2 2358.99682    0   21 1905.18724 2358.99682  23.8%     -    4s
+    33    33 1946.38956    7   17 1905.18724 2203.62633  15.7%   316    5s
+*  314     0              16    1905.1885225 1907.45054  0.12%   130    6s
+
+Cutting planes:
+  Implied bound: 91
+  MIR: 109
+  Flow cover: 155
+  RLT: 234
+  Relax-and-lift: 29
+  Lazy constraints: 736
+
+Explored 318 nodes (56042 simplex iterations) in 6.61 seconds (15.07 work units)
+Thread count was 8 (of 8 available processors)
+
+Solution count 1: 1905.19 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 1.905188522539e+03, best bound 1.905188522539e+03, gap 0.0000%
+
+User-callback calls 1779, time in user-callback 0.36 sec
